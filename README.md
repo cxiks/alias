@@ -23,7 +23,7 @@ docker run --name mysql_alias \
 ## 🔹 2. Создание базы данных и таблиц
 
 База данных `alias_db` была создана с кодировкой `utf8mb4`. Были созданы и заполнены тестовыми данными три таблицы: `customers`, `orders` и `employees`.
-
+![](/img/image.png)
 ---
 
 ## 🔹 3. Работа с алиасами (Выполненные запросы)
@@ -45,7 +45,7 @@ SELECT e.name AS employee, m.name AS manager
 FROM employees e
 JOIN employees m ON e.manager_id = m.id;
 ```
-
+![](/img/image%20copy.png)
 ### 3.3. Алиасы столбцов и агрегация
 ```sql
 SELECT c.name, COUNT(o.id) AS order_count, SUM(o.amount) AS total_amount
@@ -55,7 +55,7 @@ GROUP BY c.id, c.name
 ORDER BY total_amount DESC;
 ```
 *Примечание: Использование алиаса `total_amount` в `ORDER BY` работает, так как `ORDER BY` выполняется после `SELECT`. Использование его в `WHERE` вызовет ошибку.*
-
+![](/img/image%20copy%202.png)
 ---
 
 ## 🔹 4. Ведение и экспорт лога
