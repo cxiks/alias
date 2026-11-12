@@ -1,5 +1,5 @@
 
-```markdown
+
 # Отчет по учебному руководству: Алиасы в SQL
 
 **Выполнил:** [Ваше Имя / Фамилия]
@@ -24,7 +24,7 @@ docker run --name mysql_alias \
   -v mysql_alias_data:/var/lib/mysql \
   -v $(pwd)/my.cnf:/etc/mysql/conf.d/my.cnf \
   -d mysql:8.0
-```
+
 
 ---
 
