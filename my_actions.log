@@ -1,0 +1,29 @@
+2026-11-12T11:59:11.663131Z	    8 Query	SHOW VARIABLES LIKE 'general_log%'
+2026-11-12T11:59:37.689858Z	    8 Query	CREATE DATABASE alias_db
+2026-11-12T11:59:37.711252Z	    8 Query	SELECT DATABASE()
+2026-11-12T11:59:37.772414Z	    8 Query	CREATE TABLE customers (
+2026-11-12T11:59:37.882555Z	    8 Query	CREATE TABLE orders (
+2026-11-12T11:59:38.719912Z	    8 Query	CREATE TABLE employees (
+2026-11-12T11:59:41.678384Z	    8 Query	INSERT INTO customers (name, email, city) VALUES
+2026-11-12T11:59:41.729614Z	    8 Query	INSERT INTO orders (customer_id, order_date, amount, status) VALUES
+2026-11-12T11:59:41.998957Z	    8 Query	INSERT INTO employees (name, position, manager_id) VALUES
+2026-11-12T11:59:45.249518Z	    8 Query	SELECT * FROM customers
+2026-11-12T11:59:45.250227Z	    8 Query	SELECT * FROM orders
+2026-11-12T11:59:45.599313Z	    8 Query	SELECT * FROM employees
+2026-11-12T11:59:50.484502Z	    8 Query	SELECT customers.name, orders.order_date, orders.amount
+2026-11-12T11:59:54.739627Z	    8 Query	SELECT c.name, o.order_date, o.amount
+2026-11-12T11:59:58.558643Z	    8 Query	SELECT e.name AS employee, m.name AS manager
+2026-11-12T12:00:01.994665Z	    8 Query	SELECT c.id, o.id FROM customers c JOIN orders o ON c.id = o.customer_id
+2026-11-12T12:00:04.741574Z	    8 Query	SELECT *
+2026-11-12T12:00:11.068843Z	    8 Query	SELECT name AS customer_name,
+2026-11-12T12:00:20.532364Z	    8 Query	SELECT id, amount * 2 AS double_amount
+2026-11-12T12:00:22.559707Z	    8 Query	SELECT id, amount * 2 AS double_amount
+2026-11-12T12:00:25.245935Z	    8 Query	SELECT id, amount * 2 AS double_amount
+2026-11-12T12:00:28.451740Z	    8 Query	SELECT c.name, o.total
+2026-11-12T12:00:31.119184Z	    8 Query	SELECT c.name,
+2026-11-12T12:00:33.622585Z	    8 Query	SELECT c.name AS customer,
+2026-11-12T12:00:36.296323Z	    8 Query	SELECT customers.name
+2026-11-12T12:00:36.480330Z	    8 Query	SELECT c.name
+2026-11-12T12:00:42.799819Z	    8 Query	SELECT customers.name, COUNT(orders.id) AS order_count, SUM(orders.amount) AS total_amount
+2026-11-12T12:00:44.728064Z	    8 Query	SELECT c.name, COUNT(o.id) AS order_count, SUM(o.amount) AS total_amount
+2026-11-12T12:01:58.836495Z	    9 Query	SHOW VARIABLES LIKE 'general_log%'
