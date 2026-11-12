@@ -55,7 +55,7 @@ GROUP BY c.id, c.name
 ORDER BY total_amount DESC;
 ```
 *Примечание: Использование алиаса `total_amount` в `ORDER BY` работает, так как `ORDER BY` выполняется после `SELECT`. Использование его в `WHERE` вызовет ошибку.*
-![](/img/image%20copy%202.png)
+![](img/image%20copy%202.png)
 ---
 
 ## 🔹 4. Ведение и экспорт лога
@@ -94,7 +94,7 @@ docker exec -e MYSQL_PWD=123 mysql_alias mysqldump -uroot \
   --single-transaction \
   alias_db > alias_dump.sql
 ```
-
+![](/img/image%20copy%203.png)
 ---
 
 ## 📌 Итоги работы
